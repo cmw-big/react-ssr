@@ -1,7 +1,9 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-pnpm exec lint-staged
+echo "lint-staged start"
+time pnpm exec lint-staged
+echo "lint-staged end"
 
 # 执行类型检查脚本
 "./type-check"
