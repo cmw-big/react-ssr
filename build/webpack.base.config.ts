@@ -73,10 +73,6 @@ const config: Configuration = {
           /node_modules[\\/]core-js/,
           /node_modules[\\/]webpack[\\/]buildin/
         ]
-      },
-      {
-        test: /\.(png|jpe?g|svg|gif|webp)/,
-        type: 'asset'
       }
     ]
   },

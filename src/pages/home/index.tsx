@@ -2,7 +2,10 @@
 // import useStyles from 'isomorphic-style-loader/useStyles'
 import { observer, useLocalObservable } from 'mobx-react'
 import { StoreContext } from '@/store'
+import img1 from '@/assets/imgs/图片.jpg'
 import styles from './index.scss'
+
+console.log(img1, 'img==')
 
 const Home: FC = observer(() => {
   const store = useContext(StoreContext)
@@ -25,6 +28,7 @@ const Home: FC = observer(() => {
     <div>
       <h1>Home</h1>
       <p>{count}</p>
+      <img src={img1} alt="" />
       <button
         className={styles['beauty-btn']}
         type="button"
