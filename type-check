@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# 执行类型检查
+for file in ./src/*; do
+    if test -d "$file"; then
+        pnpm tsc -p "$file"
+    fi
+done
