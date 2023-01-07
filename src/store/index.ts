@@ -1,3 +1,4 @@
+
 import { action, observable } from 'mobx'
 import { createContext } from 'react'
 
@@ -13,3 +14,4 @@ class Store {
 }
 export default Store
 export const StoreContext = createContext<Store>(new Store())
+console.log('test===')
