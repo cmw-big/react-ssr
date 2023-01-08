@@ -5,7 +5,7 @@ import { cwd } from 'process'
 import { CleanWebpackPlugin } from 'clean-webpack-plugin'
 
 const config: Configuration = {
-  watch: true,
+  // watch: true,
   watchOptions: {
     ignored: /node_modules/
   },
@@ -14,7 +14,7 @@ const config: Configuration = {
     errorDetails: true
   },
   devtool: 'inline-source-map',
-  mode: 'development',
+  mode: 'production',
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
     alias: {
@@ -23,6 +23,7 @@ const config: Configuration = {
     }
   },
   module: {
+    strictExportPresence: true,
     rules: [
       {
         test: /\.m?jsx?$/,

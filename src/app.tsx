@@ -2,6 +2,7 @@
 import { useTranslation } from 'react-i18next'
 import '@/assets/global.scss'
 import Home from '@/pages/home'
+import { sum } from '@/common/index'
 import Store, { StoreContext } from './store'
 import styles from './app.scss'
 
@@ -24,3 +25,6 @@ export default () => {
     </StrictMode>
   )
 }
+
+const result = sum({ a: 1, b: 2 })
+console.log(result, 'result')

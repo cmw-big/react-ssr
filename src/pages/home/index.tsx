@@ -5,8 +5,6 @@ import { StoreContext } from '@/store'
 import img1 from '@/assets/imgs/图片.jpg'
 import styles from './index.scss'
 
-console.log(img1, 'img==')
-
 const Home: FC = observer(() => {
   const store = useContext(StoreContext)
   const [count, setCount] = useState(0)
